@@ -7,11 +7,6 @@
 
 DEVICE_PATH := device/hmd/WSP_sprout
 
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_MKBOOTIMG := mtkbootimg
-BOARD_CUSTOM_BOOTIMG_MK := device/hmd/WSP_sprout/mtk/bootimg.mk
-BOARD_MKBOOTIMG_ARGS := --mtk 1
-
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
