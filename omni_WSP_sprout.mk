@@ -6,10 +6,11 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
+#$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+# desperately try to fix kernel
 # Inherit from WSP_sprout device
 
 # Inherit some common Omni stuff.
